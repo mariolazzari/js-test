@@ -1,0 +1,27 @@
+{
+  "name": "js-test",
+  "version": "1.0.0",
+  "description": "\"# js-test\"",
+  "main": "index.js",
+  "scripts": {
+    "run": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariolazzari/js-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariolazzari/js-test/issues"
+  },
+  "homepage": "https://github.com/mariolazzari/js-test#readme",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
