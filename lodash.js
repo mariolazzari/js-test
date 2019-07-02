@@ -43,3 +43,21 @@ console.log("Object intersection (obj1,obj2):", objInter1);
 console.log("Object intersection (obj2,obj1):", objInter2);
 console.log("Object difference (obj1 - obj2):", objDiff1);
 console.log("Object difference (obj2 - obj1):", objDiff2);
+
+// pick
+const objPick = {
+  _id: null,
+  name: "Mario",
+  age: 44,
+  hold: false,
+  remarks: undefined
+};
+
+// property to pick
+const toPick = ["name", "age", "hold"];
+console.log(`pick ${toPick}:`, _.pick(objPick, toPick));
+
+// pickBy
+console.log("pickBy (default identity):", _.pickBy(objPick)); // false is missing
+console.log("pickBy (null only):", _.pickBy(objPick, _.isNull));
+console.log("pickBy (null or undefined):", _.pickBy(objPick, _.isNil));
