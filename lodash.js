@@ -49,7 +49,7 @@ const objPick = {
   _id: null,
   name: "Mario",
   age: 44,
-  hold: false,
+  hold: true,
   remarks: undefined
 };
 
