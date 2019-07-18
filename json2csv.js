@@ -3,7 +3,7 @@ const { parseAsync } = require("json2csv");
 const moment = require("moment");
 
 const fields = ["VarName", "TimeString", "VarValue"];
-const footer = `\r\n$RT_DIS$\r\n$RT_COUNT$\r\n`;
+const footer = `\r\n$RT_DIS$\r\n$RT_COUNT$`;
 const opts = { fields, delimiter: ";", eol: "\r\n" };
 
 // Current datetime formats
