@@ -27,7 +27,7 @@ const test = async (path, data) => {
 
     // set csv file name
     const fileDate = moment().format(fileNameDate);
-    path += `${fileDate}.csv`;
+    path += `_${fileDate}.csv`;
 
     // save file to disk
     fs.writeFile(path, csv, { flags: "w", encoding: "utf8" }, err => {
@@ -46,4 +46,4 @@ const data = [
   { VarName: "tag3", VarValue: 3 }
 ];
 
-test("test.csv", data);
+test("test", data);
