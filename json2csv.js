@@ -32,11 +32,11 @@ const test = async (path, data) => {
     // save file to disk
     fs.writeFile(path, csv, { flags: "w", encoding: "utf8" }, err => {
       if (err) {
-        logger(`Error while creating file ${path}`, err, "csvWriter");
+        console.log(`Error while creating file ${path}:`, err);
       }
     });
   } catch (error) {
-    console.log(`Error while creting ${path} in memory`, error, "csvWriter");
+    console.log(`Error while creting ${path} in memory:`, error);
   }
 };
 
